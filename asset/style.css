@@ -1,37 +1,100 @@
+/* Information globale pour le site*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #683624;
+    background-image: url(./img/fond.png);
+    background-size: cover;
     color: #C3D6D6;
 }
 
-#photo1 {
-    display: flex;
-    margin-left: 550px;
-}
+
 
 header {
+    
     background-color: black;
+    padding: 2rem 0rem 0rem 0rem; 
+    bottom: 0;
+        left: 0;
+        width: 100%; 
+        height: 40px; 
+
+    
+    
     
 }
 
 #menu {
-    margin-left: 480px;
-    margin-top: 20px;
-    position: absolute;
+    text-align: center;
+    
+    margin-top: -6px;
+    
     align-content: center;
 }
 
 #logo {
-    margin-top: 4px;
+    margin-top: -17px;
     position: absolute;
 }
+
+#logo:hover {
+    filter: brightness(130%)
+}
+
+
 
 h1 {
     text-align: center;
 }
 
+h1:hover {
+    color: #F5E03E;
+}
+
+
+
+a:link {
+    color: #C3D6D6 ;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #F5E03E;
+}
+
+a:visited {
+    color: #C3D6D6 ;
+}
+
+#who {
+    margin-left: 10px;
+}
+
+/* Accueil*/
+
+.pres {
+    display: flex;
+    flex-direction: row;
+    padding-left: 1rem ;
+    padding-right: 8rem;
+}
+
+.photo1 {
+   
+    align-content: center;
+    
+}
+
+.photo1:hover {
+    filter: brightness(130%)
+}
+
 table {
-   margin-left:335px;
+   margin-left:290px;
 }
 
 #imagep {
@@ -39,3 +102,80 @@ table {
     margin-left: 350px;
 }
 
+
+#photo2 {
+    padding: 1rem;
+    padding-left: 11rem;
+    align-items: center;
+}
+
+#photo2:hover {
+    filter: brightness(130%)
+}
+
+/* L'équipe*/
+
+.toine {
+    display: flex;
+    flex-direction: row;
+    padding: 5px ;
+}
+
+.toine:hover {
+    filter: brightness(110%)
+}
+
+/* L'équipe*/
+
+.event {
+    display: flex;
+    flex-direction: row;
+    padding-left: 1rem ;
+    padding-right: 20rem;
+    
+}
+
+.ie {
+    padding-left: 1rem ;
+    align-items:center;
+}
+
+.ie:hover {
+    filter: brightness(130%);
+}
+
+/* Footer*/
+
+#foot {
+    text-align: center;
+    
+    color: #C3D6D6;
+}
+
+footer {
+    background-color: black;
+    
+       
+        padding: 2rem 1rem 0rem 1rem; 
+        bottom: 0;
+        left: 0;
+        width: 100%; 
+        height: 40px; 
+        
+        }
+
+
+#foot1 {
+    text-align: center;
+    background-color: black;
+    
+        position: fixed; 
+        padding: 1rem 1rem 0rem 1rem; 
+        bottom: 0;
+        left: 0;
+        width: 100%; 
+        height: 40px; 
+        
+        
+    color: #C3D6D6;
+}
