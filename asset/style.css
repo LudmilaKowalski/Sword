@@ -10,6 +10,7 @@ body {
     background-image: url(./img/fond.png);
     background-size: cover;
     color: #C3D6D6;
+    overflow-x: hidden;
 }
 
 
@@ -76,6 +77,34 @@ a:visited {
 
 /* Accueil*/
 
+.carousel-items {
+    display: flex;
+    overflow-x: scroll;
+    padding: 1rem 0;
+    scroll-snap-type: x mandatory;
+}
+
+.carousel-item {
+    flex: 1 0 250px;
+    margin-left: 1rem;
+    scroll-snap-align: start;
+
+}
+
+::-webkit-scrollbar-track {
+    background-color: #C3D6D6;
+}
+
+::-webkit-scrollbar {
+    height: 6px;
+    background-color: #C3D6D6;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #405554;
+    border-radius: 3px;
+}
+
 .pres {
     display: flex;
     flex-direction: row;
@@ -84,15 +113,16 @@ a:visited {
 }
 
 .photo1 {
-   padding-left: 11rem;
- 
-    align-item: center;
+   
+    align-content: center;
     
 }
 
 .photo1:hover {
     filter: brightness(130%)
 }
+
+/* Galerie */
 
 table {
    margin-left:290px;
@@ -106,13 +136,22 @@ table {
 
 #photo2 {
     padding: 1rem;
-    padding-left: 11rem;
-    align-items: center;
+    display:inline-block;
+    inline-size: auto;
+   
 }
 
 #photo2:hover {
     filter: brightness(130%)
 }
+
+h2 {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    }
 
 /* L'équipe*/
 
@@ -126,24 +165,17 @@ table {
     filter: brightness(110%)
 }
 
-/* L'équipe*/
+/* Evènement/
 
 .event {
-    display: flex;
-    flex-direction: row;
-    padding-left: 1rem ;
-    padding-right: 20rem;
-    
-}
-
-.ie {
-    padding-left: 1rem ;
-    align-items:center;
+    text-align: center;
 }
 
 .ie:hover {
     filter: brightness(130%);
 }
+
+
 
 /* Footer*/
 
@@ -170,7 +202,22 @@ footer {
     text-align: center;
     background-color: black;
     
-        position: fixed; 
+        position: fixed;
+        padding: 1rem 1rem 0rem 1rem; 
+        bottom: 0;
+        left: 0;
+        width: 100%; 
+        height: 40px; 
+        
+        
+    color: #C3D6D6;
+}
+
+#foot2 {
+    text-align: center;
+    background-color: black;
+    
+       ;
         padding: 1rem 1rem 0rem 1rem; 
         bottom: 0;
         left: 0;
