@@ -141,6 +141,7 @@ table {
 
 #photo2 {
     padding: 1rem;
+    margin-left: 10vh;
     display:inline-block;
     inline-size: auto;
    
@@ -152,6 +153,10 @@ table {
 
 h2 {
     text-align: center;
+}
+
+h2:hover {
+    color: #F5E03E;
 }
 
 ul {
@@ -168,6 +173,18 @@ ul {
 
 .toine:hover {
     filter: brightness(110%)
+}
+
+#équipe {
+    margin-top: 13vh;
+}
+
+/*.team {
+  margin-left: 72vh;
+}
+*/
+.team:hover {
+    filter: brightness(120%);
 }
 
 /* Evènement*/
