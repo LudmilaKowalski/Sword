@@ -14,7 +14,7 @@ You can see here all of the page.
 
 Home page :
 
-![Image](./asset/img/sword.png)
+![Image](./asset/img/sword1.png)
 
 Galery :
 
